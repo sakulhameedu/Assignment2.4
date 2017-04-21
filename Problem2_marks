@@ -1,0 +1,32 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class HelloWorld{
+
+	public static void main (String[] args)
+	{
+	int age,marks;
+	Scanner sn = new Scanner(System.in);
+		System.out.println("Enter the age numbers:");  //getting input values 
+		age=sn.nextInt();
+		System.out.println("Enter the marks  numbers:");
+		marks=sn.nextInt();
+
+        if ((marks > 70) ||(age < 15 && marks <= 60))
+        {
+        	System.out.println("GRADE A");
+        }
+        else if ((marks > 61 && marks <= 70)||(age < 15 && marks <= 45 &&  marks > 60))
+        {
+            System.out.println("GRADE B");
+        }
+        else if ((marks < 61 )||(age < 15 && marks > 45))
+        {
+            System.out.println("GRADE C");
+        }
+        }
+        }
+		
